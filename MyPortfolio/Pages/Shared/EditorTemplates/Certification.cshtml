@@ -1,0 +1,29 @@
+﻿@model MyPortfolio.Models.Certification
+
+@{
+    ViewData.TemplateInfo.HtmlFieldPrefix = "Certification";
+}
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<div class="form-group">
+    <label asp-for="Name" class="control-label"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="State" class="control-label"></label>
+    <input asp-for="State" class="form-control" />
+    <span asp-validation-for="State" class="text-danger"></span>
+</div>
+            
+<div class="form-group">
+    <label asp-for="Image.File" class="control-label"></label>
+    @if (null != Model.Image)
+    {
+        <span>(<a target="_blank" href="@Url.Content($"~/{Model.Image.Path}")"> @Model.Image.Name</a>)</span>
+    }
+    <input type="file" asp-for="Image.File" class="form-control" />
+    <span asp-validation-for="Image.File" class="text-danger"></span>
+</div>
