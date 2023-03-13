@@ -5,16 +5,44 @@
       "PackagePath": "staticwebassets\\MyPortfolio.bundle.scp.css"
     },
     {
+      "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\certifications\\images\\5060aaf0-9d32-47ef-b075-1babaa9882f1.png",
+      "PackagePath": "staticwebassets\\certifications\\images\\5060aaf0-9d32-47ef-b075-1babaa9882f1.png"
+    },
+    {
+      "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\certifications\\images\\a3d566e2-73e3-4424-8979-6fffa085130f.png",
+      "PackagePath": "staticwebassets\\certifications\\images\\a3d566e2-73e3-4424-8979-6fffa085130f.png"
+    },
+    {
       "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\certifications\\images\\b6e96cf8-9fac-4389-be82-8430cc852c5d.png",
       "PackagePath": "staticwebassets\\certifications\\images\\b6e96cf8-9fac-4389-be82-8430cc852c5d.png"
+    },
+    {
+      "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\certifications\\images\\d8f56943-e310-4f7e-b5d0-3c7010293a30.png",
+      "PackagePath": "staticwebassets\\certifications\\images\\d8f56943-e310-4f7e-b5d0-3c7010293a30.png"
+    },
+    {
+      "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
     },
     {
       "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\css\\wallpaper\\styles_wallpaper.css",
+      "PackagePath": "staticwebassets\\css\\wallpaper\\styles_wallpaper.css"
+    },
+    {
+      "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\css\\wallpaper\\styles_wallpaper.scss",
+      "PackagePath": "staticwebassets\\css\\wallpaper\\styles_wallpaper.scss"
+    },
+    {
       "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\img\\47C92497-2883-4291-8FB1-0955B3BCE28F.jpeg",
+      "PackagePath": "staticwebassets\\img\\47C92497-2883-4291-8FB1-0955B3BCE28F.jpeg"
     },
     {
       "Id": "C:\\Dev\\MyPortfolio\\MyPortfolio\\wwwroot\\js\\site.js",

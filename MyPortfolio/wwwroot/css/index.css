@@ -1,0 +1,80 @@
+﻿body {
+}
+
+h1, h2, h3, p, a {
+    color: white;
+}
+
+h1, h2 {
+    font-size: 42px;
+}
+
+i {
+    font-size: 45px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-top: 260px;
+    margin-bottom: 270px;
+}
+
+#pdp {
+    border: solid 5px #FFF;
+    border-radius: 150px;
+    width: 300px
+}
+
+.certificationsandskills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input, textarea {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    border: solid 1px grey;
+    background-color: lightslategrey;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+.btn {
+    cursor: pointer;
+    color: white;
+    border: solid 2px grey;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: lightslategrey;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border: solid 2px grey;
+}

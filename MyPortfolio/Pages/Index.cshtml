@@ -3,8 +3,58 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portfolio</title>
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/145af3cbdd.js" crossorigin="anonymous"></script>
+</head>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="presentation">
+    <img id="pdp" src="~/img/47C92497-2883-4291-8FB1-0955B3BCE28F.jpeg" alt="Photo de Profil">
+    <h1>Hi, I am Ethan Francois</h1>
+    <h3 style="font-size: 27px ;">French student at Saint-Vincent in second year of BTEC ISO</h3>
+    <h3 style="font-size: 27px ;">Aiming to become a fullsteak developper</h3>
+    <div class="links" style="display: flex; gap: 20px;">
+        <a target="_blank" href="#"><i class="fa-solid fa-file-pdf"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/ethan-fran%C3%A7ois-5b168a263/"><i class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/ethxn-frs"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="#contact"><i class="fa-solid fa-comment"></i></a>
+    </div>
+</div>
+
+<div class="certificationsandskills">
+    <h2>Projects</h2>
+    <p style="font-size: 26px">Here you can find all projects I have done in school, professional and personal context</p>
+</div>
+
+
+<div class="certificationsandskills">
+    <h2>Certifications and Training</h2>
+    <p style="font-size: 26px">Here you can find all certifications and formations I got or I am still doing</p>
+</div>
+
+<div class="certificationsandskills">
+    <h2>Career</h2>
+    <p style="font-size: 26px">Here you could find a chronology retracing my career and skills that I have acquired.</p>
+@*    @foreach (var item in Model.Certifications)
+    {
+        <p>@Html.DisplayFor(modelItem => item.Name)</p>
+    }*@
+</div>
+
+<div class="contact" id="contact">
+    <h2>Contact Me!</h2>
+    <p style="font-size: 26px">Here is a contact form in case of you would like to contact me</p>
+    <form id="contactform">
+        <input type="text" class="input" name="nom" id="name" placeholder="Your Firstname / Lastname" required>
+        <input type="email" class="input" name="email" id="email" placeholder="Your email address" required>
+        <input type="tel" class="input" name="tel" id="number" placeholder="Your phone number (optionnal)">
+        <textarea style="height: 200px" name="message" class="textarea" form="contactform" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+        <div class="buttons" style="display:flex ; justify-content: space-evenly">
+            <button class="btn" type="reset" name="resetButton">Annuler</button>
+            <button class="btn" type="submit" name="submitButton">Envoyer</button>
+        </div>
+    </form>
 </div>

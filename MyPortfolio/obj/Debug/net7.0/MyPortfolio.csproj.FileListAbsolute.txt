@@ -283,3 +283,4 @@ C:\Dev\MyPortfolio\MyPortfolio\obj\Debug\net7.0\refint\MyPortfolio.dll
 C:\Dev\MyPortfolio\MyPortfolio\obj\Debug\net7.0\MyPortfolio.pdb
 C:\Dev\MyPortfolio\MyPortfolio\obj\Debug\net7.0\MyPortfolio.genruntimeconfig.cache
 C:\Dev\MyPortfolio\MyPortfolio\obj\Debug\net7.0\ref\MyPortfolio.dll
+C:\Dev\MyPortfolio\MyPortfolio\obj\Debug\net7.0\scopedcss\Pages\Shared\_LayoutBackoffice.cshtml.rz.scp.css

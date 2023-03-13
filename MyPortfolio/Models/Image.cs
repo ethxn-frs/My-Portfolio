@@ -11,7 +11,13 @@ namespace MyPortfolio.Models
         [NotMapped]
         [Display(Name = "Image")]
         public IFormFile File { get; set; }
-        public int CertificationId { get; set; }
+        public int? CertificationId { get; set; }
         public virtual Certification? Certification { get; set; }
+        public int? ProjectId { get; set; }
+        public virtual Project? Project { get; set; }
+        public int? SkillId { get; set; }
+        public virtual Skill? Skill { get; set; }
+        public int? SchoolId { get; set; }
+        public virtual School? School { get; set; }
     }
 }

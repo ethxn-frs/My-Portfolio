@@ -41,10 +41,11 @@ namespace MyPortfolio.Areas.Certifications.Pages
                 return NotFound();
             }
 
-            if (hasErrorMessage.GetValueOrDefault())
-            {
-                ErrorMessage = $"Une erreur est survenue lors de la tentative de la suppression de {Certification.Name} (){Certification.Id}"
-            }
+            //if (hasErrorMessage.GetValueOrDefault())
+            //{
+            //    ErrorMessage =
+            //        $"Une erreur est survenue lors de la tentative de la suppression de {Certification.Name} ({Certification.Id})";
+            //}
 
             return Page();
         }

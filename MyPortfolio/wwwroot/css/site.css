@@ -17,6 +17,15 @@ html {
   min-height: 100%;
 }
 
+header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: radial-gradient(#0d1d31 0%, #303044 100%);
+    z-index: 1;
+}
+
 body {
   margin-bottom: 60px;
 }

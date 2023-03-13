@@ -39,6 +39,15 @@ button.accept-policy[b-cp3gxeds9i] {
   line-height: inherit;
 }
 
+.header[b-cp3gxeds9i] {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: radial-gradient(#0d1d31 0%, #303044 100%);
+    z-index: 1;
+}
+
 .footer[b-cp3gxeds9i] {
   position: absolute;
   bottom: 0;

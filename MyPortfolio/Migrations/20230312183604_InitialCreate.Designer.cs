@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyPortfolio.Data;
 
 #nullable disable
 
-namespace MyPortfolio.Data.Migrations
+namespace MyPortfolio.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230312183604_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -238,7 +241,6 @@ namespace MyPortfolio.Data.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("State")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -254,23 +256,130 @@ namespace MyPortfolio.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CertificationId")
+                    b.Property<int?>("CertificationId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Path")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SchoolId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SkillId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CertificationId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[CertificationId] IS NOT NULL");
+
+                    b.HasIndex("ProjectId")
+                        .IsUnique()
+                        .HasFilter("[ProjectId] IS NOT NULL");
+
+                    b.HasIndex("SchoolId")
+                        .IsUnique()
+                        .HasFilter("[SchoolId] IS NOT NULL");
+
+                    b.HasIndex("SkillId")
+                        .IsUnique()
+                        .HasFilter("[SkillId] IS NOT NULL");
 
                     b.ToTable("Images");
+                });
+
+            modelBuilder.Entity("MyPortfolio.Models.Project", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Context")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GithubLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LanguageCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("ShortDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TimeSpent")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Project");
+                });
+
+            modelBuilder.Entity("MyPortfolio.Models.School", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("School");
+                });
+
+            modelBuilder.Entity("MyPortfolio.Models.Skill", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("ShortDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Skill");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -328,17 +437,47 @@ namespace MyPortfolio.Data.Migrations
                 {
                     b.HasOne("MyPortfolio.Models.Certification", "Certification")
                         .WithOne("Image")
-                        .HasForeignKey("MyPortfolio.Models.Image", "CertificationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MyPortfolio.Models.Image", "CertificationId");
+
+                    b.HasOne("MyPortfolio.Models.Project", "Project")
+                        .WithOne("Image")
+                        .HasForeignKey("MyPortfolio.Models.Image", "ProjectId");
+
+                    b.HasOne("MyPortfolio.Models.School", "School")
+                        .WithOne("Image")
+                        .HasForeignKey("MyPortfolio.Models.Image", "SchoolId");
+
+                    b.HasOne("MyPortfolio.Models.Skill", "Skill")
+                        .WithOne("Image")
+                        .HasForeignKey("MyPortfolio.Models.Image", "SkillId");
 
                     b.Navigation("Certification");
+
+                    b.Navigation("Project");
+
+                    b.Navigation("School");
+
+                    b.Navigation("Skill");
                 });
 
             modelBuilder.Entity("MyPortfolio.Models.Certification", b =>
                 {
-                    b.Navigation("Image")
-                        .IsRequired();
+                    b.Navigation("Image");
+                });
+
+            modelBuilder.Entity("MyPortfolio.Models.Project", b =>
+                {
+                    b.Navigation("Image");
+                });
+
+            modelBuilder.Entity("MyPortfolio.Models.School", b =>
+                {
+                    b.Navigation("Image");
+                });
+
+            modelBuilder.Entity("MyPortfolio.Models.Skill", b =>
+                {
+                    b.Navigation("Image");
                 });
 #pragma warning restore 612, 618
         }

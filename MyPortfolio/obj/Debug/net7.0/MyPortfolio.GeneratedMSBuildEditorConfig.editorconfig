@@ -48,6 +48,94 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Projects/Pages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdHNcUGFnZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Projects/Pages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdHNcUGFnZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Projects/Pages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdHNcUGFnZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Projects/Pages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdHNcUGFnZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Projects/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdHNcUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Projects/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdHNcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Projects/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdHNcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Schools/Pages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Nob29sc1xQYWdlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Schools/Pages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Nob29sc1xQYWdlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Schools/Pages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Nob29sc1xQYWdlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Schools/Pages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Nob29sc1xQYWdlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Schools/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Nob29sc1xQYWdlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Schools/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Nob29sc1xQYWdlc1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Schools/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Nob29sc1xQYWdlc1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Skills/Pages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2tpbGxzXFBhZ2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Skills/Pages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2tpbGxzXFBhZ2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Skills/Pages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2tpbGxzXFBhZ2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Skills/Pages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2tpbGxzXFBhZ2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Skills/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2tpbGxzXFBhZ2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Skills/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2tpbGxzXFBhZ2VzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Areas/Skills/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2tpbGxzXFBhZ2VzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/MyPortfolio/MyPortfolio/Pages/Backoffice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja29mZmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Dev/MyPortfolio/MyPortfolio/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -83,3 +171,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Dev/MyPortfolio/MyPortfolio/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cp3gxeds9i
+
+[C:/Dev/MyPortfolio/MyPortfolio/Pages/Shared/_LayoutBackoffice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRCYWNrb2ZmaWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-vw6r4lj6rc

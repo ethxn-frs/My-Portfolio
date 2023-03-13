@@ -40,7 +40,65 @@ button.accept-policy[b-cp3gxeds9i] {
   line-height: inherit;
 }
 
+.header[b-cp3gxeds9i] {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: radial-gradient(#0d1d31 0%, #303044 100%);
+    z-index: 1;
+}
+
 .footer[b-cp3gxeds9i] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/MyPortfolio/Pages/Shared/_LayoutBackoffice.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-vw6r4lj6rc] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-vw6r4lj6rc] {
+  color: #0077cc;
+}
+
+.btn-primary[b-vw6r4lj6rc] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-vw6r4lj6rc], .nav-pills .show > .nav-link[b-vw6r4lj6rc] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-vw6r4lj6rc] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-vw6r4lj6rc] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-vw6r4lj6rc] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-vw6r4lj6rc] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-vw6r4lj6rc] {
   position: absolute;
   bottom: 0;
   width: 100%;
